@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Critique & Redesign
+		</h1>
+
+		<p>
+			<strong>Supriya Lall</strong> — <em>supriya@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Reading & Critique</h2>
+
+			<figure>
+				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
+			</figure>
+
+			<p>
+				Insights about the data/visualization:
+			</p>
+
+			<ul>
+				<li>This visualization seems to capture count of new COVID-19 cases (7-day average) in the United States from 2020 to 2022</li>
+				<li>Temporal scale seems to be circular, making the visualization spiral-like</li>
+				<li>Can definitely see how the number of deaths increases as time goes on</li>
+				<li>Peaks occur in January 2021, September 2021, and January 2022</li>
+
+			</ul>
+
+			<p>
+				Design Critique:
+			</p>
+
+			<p>
+			Overall, this visualization does seem to be interpretable and eye-catching to the viewer. The spiral format is especially eye-catching and the size of the spikes immediately alludes to the number of new COVID-19 cases during that month. Elements are also appropriately titled and labeled and the starting point of the visualization is clear as well. However, there are several issues which may be precluding factors in its overall messaging. For one, the spiral format of the temporal scale is a bit confusing (especially with limited data for 2022) and may cause viewers to second-guess their interpretation (leading to a preference for a linear scale). In addition, the labeling of the temporal scale is not as clear as it could be – although the division into quadrants is fitting for this scenario, this strategy may still lead to a cognitive bias for these particular months, leading viewers to ignore trends for other months. Another issue arises with thickness – as this quality corresponds to magnitude, viewers may not be able to accurately gauge the quantity of new COVID-19 cases that arise in a new month (especially in comparison to other time scales). 
+			In addition, the article mentions a higher likelihood of reported cases in certain months (i.e. January) vs. others – given this context, I’d also appreciate a likelihood field (either by size of spiral, color gradient, etc.) for certain periods of the year.
+			</p>
+		</section>
+
+		<section>
+			<h2>Visualization Sketches</h2>
+			*All of the visualizations below communicate 7-day averages for new COVID-19 cases.
+
+      		<figure>
+				<img src="images/first.png" alt="" />
+				<figcaption>
+					# of New COVID-19 Cases by Year (U.S.)
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>Motivation for this particular visualization → wanted a clearer temporal axis that could communicate the corresponding spikes of new COVID-19 cases</li>
+				<li>Hoping that it could communicate the info in the original visualization much more clearly</li>
+				<li>Pros</li>
+				<ul>
+					<li>Believe that it accomplished the intended purpose correctly</li>
+				</ul>
+				<li>Cons</li>
+				<ul>
+					<li>Not nearly as visually compelling as the given graphic</li>
+				</ul>
+
+			</ul>
+
+			<figure>
+				<img src="images/second.png" alt="" />
+				<figcaption>
+					# of New COVID-19 Cases By Month Per Year
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>Motivation for this particular visualization → wanted a visualization that could communicate more quantitative information about number of new COVID-19 cases per year</li>
+				<li>Pros</li>
+				<ul>
+					<li>Also that it accomplished the intended purpose correctly</li>
+					<li>Is interpretable and clear to the viewer</li>
+				</ul>
+				<li>Cons</li>
+				<ul>
+					<li>Not enough data for 2022, might be confusing for the viewer</li>
+					<li>Since data is interconnected across years, might be difficult for viewers to see a coherent story</li>
+				</ul>
+			</ul>
+
+			<figure>
+				<img src="images/third.png" alt="" />
+				<figcaption>
+					Heatmap of new COVID-19 Cases by Month Per YEar
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>Motivation for this particular visualization → wanted a cleaner gradient that communicate quantity of new COVID-19 cases across months per year (versus using a thickness level)</li>
+				<li>Pros</li>
+				<ul>
+					<li>Also believe that it accomplished the intended purpose correctly</li>
+					<li>Provides a clear interpretation of the data in a grid format, which could be easier for viewers</li>
+				</ul>
+				<li>Cons</li>
+				<ul>
+					<li>Again, does not communicate quantitative information as directly as the line graph</li>
+					<li>Not as interconnected as a line graph – difficult to extract a clear narrative</li>
+					<li>Only communicates information about the months that are in the quadrant divisions (data loss)</li>
+				</ul>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Final Visualization Design</h2>
+      
+			<figure>
+				<img src="images/final_data_viz.png" alt="" />
+				<figcaption>
+					# of New Confirmed and Tested COVID-19 Cases from 2020-2022 (by Month)
+				</figcaption>
+			</figure>
+
+		</section>
+
+		<section>
+			<h2>Final Writeup</h2>
+
+			<p>
+				With this design, I hope to include a variety of visual artifacts that would be helpful for the reader and allow for a more comprehensive analysis of COVID-19 cases in this time period.
+				We clearly see two trends -- the rise of COVID-19 tests in 2020, followed by an immediate decrease for the rest of the time period, as well as the sudden spike of COVID-19 cases in December 2021.
+				These trends tell a clear story in unison. The spike of new COVID-19 tests immediately alludes to the onset of the pandemic in 2020 -- where this decision was probably motivated by turbulent news and hysteria.
+				In contrast, the spike of new COVID-19 cases in December 2021 directly correlates with a new variant of the virus. Ascribing different colors to these characteristics and weighing these traits further with an area aspect
+				allows for this information to be presented in a clear way. However, due to the overlapping plots, some information may be unintentially obscured (i.e. December 2020).
+      		</p>
+
+			<p>
+				While I do believe that my final visualization does communicate a lot of the messages conveyed above, especially with a linear temporal scale, there definitely exist limitations with respect to the above.
+				For one, the thickness concern from the above still remains here. Although we can quantify the # of new confirmed COVID-19 tests and cases, the area graph creates a thickness component which may overshadow 
+				other information and cause the reader to inflate their perception. In addition, even the visualization above encapsulates the highest density of COVID-19 cases, I did not explicitly include a COVID-19 likelihood field -- future work 
+				would include calculating this value in order to demonstrate a discrepancy between user-perceived statistics and reality.
+
+      		</p>
+		</section>
+	</main>
+</body>
+</html>
